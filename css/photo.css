@@ -1,0 +1,27 @@
+.container {
+	width: 1000px;
+	margin: 0px auto;
+	padding: 0;
+}
+
+.photo {
+	width: 231px;
+	padding: 5px;
+	margin-bottom: 5px; 
+}
+
+.column {
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column img {
+  width: 100%;
+  padding: 3px;
+  vertical-align: top;
+}
+
+.photo:hover {
+  opacity: 0.3;
+}

@@ -1,0 +1,54 @@
+/* Reset by selecting everything */
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #1c1b1b;
+}
+
+.tab ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tab ul li {
+  display: inline-block;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab ul li a {
+  margin: auto;
+  display: inline-block;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab ul li a:hover {
+  color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab ul li a.active {
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 3px 10px;
+  border: none;
+}

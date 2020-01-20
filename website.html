@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/column_gallery.css" rel="stylesheet" type="text/css">
+<link href="css/headers.css" rel="stylesheet" type="text/css">
+<link href="css/tabs.css" rel="stylesheet" type="text/css">
+<link href="css/photo.css" rel="stylesheet" type="text/css">
+<link href="css/contact.css" rel="stylesheet" type="text/css">
+<link href="css/modal.css" rel="stylesheet" type="text/css">
+
+<title>Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+</style>
+
+</head>
+<body>
+<h1>ANDA ACHIMESCU</h1>
+
+<div class="tab">
+<ul>
+	<li> <a class="tablinks" onclick="openTab(event, 'Portfolio')" id="defaultOpen">PORTFOLIO</a></li>
+	<li> <a class="tablinks" onclick="openTab(event, 'Bullet Journal')">BULLET JOURNAL</a></li>
+	<li> <a class="tablinks" onclick="openTab(event, 'Sketches')">SKETCHES</a></li>
+	<li> <a class="tablinks" onclick="openTab(event, 'Misc')">MISC</a></li>
+	<li> <a class="tablinks" onclick="openTab(event, 'Still Life')">STILL LIFE</a></li>
+	<li> <a class="tablinks" onclick="openTab(event, 'Paintings')">PAINTINGS</a></li>
+	<li> <a class="tablinks" onclick="openTab(event, 'Art Gallery')">ART GALLERY</a></li>
+	<li> <a class="tablinks" onclick="openTab(event, 'Contact')">CONTACT</a></li>
+</ul>
+</div>
+
+
+<!-- Portfolio content -->
+<div id="Portfolio" class="tabcontent">
+  <p>
+  	<div class="container">
+  		<div class="column">
+  			<img class="photo" onclick="openPhoto(this)" src="images/skeleton.jpg" alt="Skeleton drawing" style="height: 360px">
+  			<img class="photo" onclick="openPhoto(this)" src="images/still_life.jpg" alt="Still life pencil drawing" style="height: 335px">
+  			<img class="photo" onclick="openPhoto(this)" src="images/skeleton_legs.jpg" alt="Skeleton Legs in white chalk" style="height: 326px">
+  			<img class="photo" onclick="openPhoto(this)" src="images/art_eye_far.jpg" alt="Art Gallery - View of eye" style="height: 153px">
+  			<img class="photo" onclick="openPhoto(this)" src="images/mixed_art.jpg" alt="Multiple art forms" style="height: 292px">
+			<img class="photo" onclick="openPhoto(this)" src="images/woman_drawing.jpg" alt="Colourful drawing of woman" style="height: 222px">
+		</div>
+		<div class="column">
+			<img class="photo" onclick="openPhoto(this)" src="images/flowers.jpg" alt="Water colour drawing with pen outlining" style="height: 180px">
+			<img class="photo" onclick="openPhoto(this)" src="images/eyes.jpg" alt="Art Gallery - Oil painting of eye" style="height: 153px">
+			<img class="photo" onclick="openPhoto(this)" src="images/red_bujo.png" alt="October edition of Bullet Journal" style="height: 196px">
+			<img class="photo" onclick="openPhoto(this)" src="images/house.jpg" alt="Pencil sketch of house" style="height: 311px">
+			<img class="photo" onclick="openPhoto(this)" src="images/sparkplug.jpg" alt="Sparkplug drawing" style="height: 361px">
+			<img class="photo" onclick="openPhoto(this)" src="images/art_far_away.jpg" alt="Art Gallery - flower stamp and drawing" style="height: 153px">
+			<img class="photo" onclick="openPhoto(this)" src="images/self_spirograph.jpg" alt="Pen self done spirograph" style="height: 153px">
+		</div>
+		<div class="column">
+			<img class="photo" onclick="openPhoto(this)" src="images/harry_potter.jpg" alt="Harry Potter line drawing" style="height: 425px">
+			<img class="photo" onclick="openPhoto(this)" src="images/summer_bujo.png" alt="August edition of Bullet Journal" style="height: 288px">
+			<img class="photo" onclick="openPhoto(this)" src="images/skeleton_bw.jpg" alt="Black and white skeleton drawing" style="height: 348px">
+			<img class="photo" onclick="openPhoto(this)" src="images/jan_bujo.jpg" alt="January edition of Bullet Journal" style="height: 153px">
+			<img class="photo" onclick="openPhoto(this)" src="images/june_bujo.png" alt="June edition of Bullet Journal" style="height: 159px">
+			<img class="photo" onclick="openPhoto(this)" src="images/march_bujo.jpg" alt="March edition of Bullet Journal" style="height: 153px">
+		</div>
+		<div class="column">
+			<img class="photo" onclick="openPhoto(this)" src="images/water_glass.jpg" alt="Spoon in glass drawing" style="height: 313px">
+			<img class="photo" onclick="openPhoto(this)" src="images/hands_painting.jpg" alt="Painting of two hands almost touching" style="height: 298px">
+			<img class="photo" onclick="openPhoto(this)" src="images/art_gallery.jpg" alt="Art Gallery - from the outside" style="height: 153px">
+			<img class="photo" onclick="openPhoto(this)" src="images/purple_jan_bujo.jpg" alt="January edition of Bullet Journal" style="height: 153px">
+			<img class="photo" onclick="openPhoto(this)" src="images/middle_ages_note.jpg" alt="Art in Middle Ages note" style="height: 305px">
+			<img class="photo" onclick="openPhoto(this)" src="images/purple_landscape.jpg" alt="Landscape of a purple scenery" style="height: 178px">
+			<img class="photo" onclick="openPhoto(this)" src="images/figure_drawings.jpg" alt="Figure drawings" style="height: 153px">
+		</div>
+  	</div>
+  </p>
+    <!-- The Modal -->
+	<div id="myModal" class="modal">
+ 	<span class="close">&times;</span>
+ 	<img class="modal-content" id="currentImage">
+ 	<div id="caption"></div>
+ 	</div>
+</div>
+
+
+<!-- Bullet Journal content -->
+<div id="Bullet Journal" class="tabcontent">
+  <div class="column_gallery">
+  	<img class="photo" src="images/jan_bujo.jpg" alt="January edition of Bullet Journal" style="height: 400px">
+  	<img class="photo" src="images/summer_bujo.png" alt="August edition of Bullet Journal" style="height: 600px">
+  	<img class="photo" src="images/purple_jan_bujo.jpg" alt="January edition of Bullet Journal" style="height: 400px">
+  </div>
+  <div class="column_gallery">
+  	<h2>BULLET JOURNAL</h2>
+  	<p>Keeping a bullet journal and an account to track myself is a good way I like to keep myself organized and up to date monthly. When I'm too busy to sketch, I like to use my creativity to plan a new lay out for my bullet journal. While I no longer post as often on my account, I still continue to have a passion for bullet journalling, continuing on even without online validation.</p>
+  	<img class="photo" src="images/june_bujo.png" alt="June edition of Bullet Journal" style="height: 400px">
+  	<img class="photo" src="images/red_bujo.png" alt="October edition of Bullet Journal" style="height: 400px">
+	<img class="photo" src="images/march_bujo.jpg" alt="March edition of Bullet Journal" style="height: 400px">
+</div>
+</div>
+
+<!-- Sketches content -->
+<div id="Sketches" class="tabcontent">
+	<div class="column_gallery">
+		<p><img class="photo" src="images/sparkplug.jpg" alt="Sparkplug drawing" style="height: 800px">This spark plug was drawn was drawn as my very first assignment in my ninth grade art class, in 2015. Using graphite pencils and a kneadable eraser, I created the affect of light shining on top of the small metal plug and the look of dimentions.</p>
+		<p><img class="photo" src="images/water_glass.jpg" alt="Spoon in glass drawing" style="height: 800px">For homework, in 2015 I was asked to draw a spoon in a glass of water. With such an usual task, I set up my glass of water and spoon on top of my table. In order to make the drawing procedure simpler, I took a picture and filtered it to know where the black and white parts resigned. With this new found information, I was able to finish my assignment and have a new and useable technique.</p>
+		<p><img class="photo" src="images/woman_drawing.jpg" alt="Colourful drawing of woman" style="height: 500px">While this is featured in my Art Gallery project, this was also my very first sketch with higher quality pencil crayons. I used a range of colours in order to create depth in the image.</p>
+	</div>
+	<div class="column_gallery">
+		<h2>SKETCHES</h2>
+		<p>I often sketch in my free time in order to gain more experience with pencils. My constant practice created a solid foundation for when I worked on art projects. Here, some of my favourite pencil art (graphite pencil, pencil crayon) is shown.</p> 
+		<p><img class="photo" src="images/old_lady.jpeg" alt="Drawing of an old lady" style="height: 800px">Asked to draw an old person in my twelfth grade art class, I decided to take upon a challenge: imitating skin details with the combination of stippling and shading. At first, I found it difficult to not exaggerate the wrinkles into looking too fake, but the more I did, it become more of a constant process and less of a hassle.</p>
+		<p><img class="photo" src="images/harry_potter.jpg" alt="Harry Potter line drawing" style="height: 900px">With a pack of crayola pencil crayons, but a vision in mind, I wanted to use my former love for Harry Potter as an inspiration to this "line" drawing. Every object was connected in some way, forming a long line up. To my best of my abilities, in 2015, I used crayolas with my knowledge on shading and proportion to create this piece.</p>
+	</div>
+  </div>
+
+<!--Misc content -->
+<div id="Misc" class="tabcontent">
+	<div class="column_gallery">
+		<p><img class="photo" src="images/middle_ages_note.jpg" alt="Art in Middle Ages note" style="height: 800px">In the eleventh grade, during our art history unit, we had to create an interesting note that touched base on all important facts taught in that unit. Using different fonts and size of words, I made the information easier to read. The addition of pictures made the note more understandable, as the reader could better understand the topic.</p> 
+		<p><img class="photo" src="images/flowers.jpg" alt="Water colour drawing with pen outlining" style="height: 350px">When experimenting with watercolour and pens, instead of sketching the flowers first in pen and the painting overtop, I decided to try something new. With the thought of overlapping in mind, I first splashed some watercolour onto the paper, and then went overtop to finish by outlining using a ballpoint pen.</p>
+		<p><img class="photo" src="images/rainbow.jpg" alt="Watercolour design" style="height: 350px">By experimenting with the use of watercolour on paper, shapes, and the formation of colour, I created this. While no colour directly changes into the one beside it, they're all fairly similar and close.</p>
+	</div>
+	<div class="column_gallery">
+		<h2>MISC</h2>
+		<p>Not all my assignments done for school were so closely linked they could all put into a similar category. With different mediums and different reasons to be made, I categorized all these pieces that while I'm still proud of them, there's not much correlation between them.</p> 
+		<p><img class="photo" src="images/self_spirograph.jpg" alt="Pen self done spirograph" style="height: 350px">In the ninth grade, I used a ruler and a circle maker to make this repeating radiograph. Using only two contradicting shades in order to add more interest to the drawing, made the drawing seem more complex but also more simple.</p>
+		<p><img class="photo" src="images/house.jpg" alt="Pencil sketch of house" style="height: 800px">For a clay project in the ninth grade, we had to draw our house before we actually got to sculpt it. Using a ruler and sitting outside my house, this was my end result.</p>
+		<p><img class="photo" src="images/figure_drawings.jpg" alt="Figure drawings" style="height: 350px">Some figure drawings</p>
+	</div>
+</div>
+
+<!-- Still Life content -->
+<div id="Still Life" class="tabcontent">
+	<div class="column_gallery"> 
+		<p><img class="photo" src="images/skeleton_legs.jpg" alt="Skeleton Legs in white chalk" style="height: 800px">Using a white pencil crayon on black paper, I had to understand how light would shine. This was in reverse to my previous knowledge gained through graphite pencil custom, where shading was done to show the shadow. Additionally, I was learning human anatomy, the different proportions of the human toe bones, and the different textures of bones, compared to my usual drawings featuring skin as the main focus.</p>
+		<p><img class="photo" src="images/mixed_art.jpg" alt="Multiple art forms" style="height: 800px">With the use of multiple mediums (pencil crayon, white pencil, graphite pencil, fine liner, ballpoint pen), I got to experiment in 2017 (grade eleven) how each one worked in comparison to the others. For example, the ballpoint pen was similar to the pencil crayons where you could layer it one on top of the other, but the fine liner was permanent as soon as placed, so mistakes were difficult to handle.</p>
+		<p><img class="photo" src="images/skeleton.jpg" alt="Skeleton drawing" style="height: 800px">Asking to draw a more unique version of the skeleton in 2017,  I decided to continue with my style, but without the aid of a picture, adding a hand in order for the skeleton to cleverly sniff a flower for his instagram.</p>
+	</div>
+	<div class="column_gallery">
+		<h2>STILL LIFE</h2>
+		<p>These projects were worked on with a variety of different mediums: white pencil crayon, graphite pencil, pencil crayons, felt tip marker, and ball point pen. Different items were drawn in order to see the different textures and learn how to better illustrate them.</p> 
+		<p><img class="photo" src="images/skeleton_bw.jpg" alt="Black and white skeleton drawing" style="height: 800px">For this project, attention to detail was very important. There were multiple bones in different directions (and colours) needed to be drawn and a light shining part of the skeleton's body. I had to be careful with the tiny details as well, such as the placement of the teeth and spinal cord.</p>
+		<p><img class="photo" src="images/still_life.jpg" alt="Still life pencil drawing" style="height: 750px">Four glass bottles of different sizes and styles, one wooden box, and four flowers had to be drawn for this image. Using the skills I had been taught and learned myself through practice, I was able to add texture, light, and depth to distinguish each piece from one another.</p>
+	</div>
+  </div>
+
+<!-- Paintings content -->
+<div id="Paintings" class="tabcontent">
+	<div class="column_gallery">
+		<p><img class="photo" src="images/hands_painting.jpg" alt="Painting of two hands almost touching" style="height: 700px">For an English project in 2015, I was asked to illustrate in some way the novel I had read, "Hey Nostradamus". While other students had chosen to make a video report or write an essay, I decided to showcase the loss of youth, but the belief of God through a painting. The novel was about the aftermath of a school shooting, and the main protagonist was still hopeful, even though he greatly needed support. I showed this by using colour to show the hope, black to signify his depressed state of mind, and white, as his past girlfriend is now an angel, and in order to move on, he must accept what had happened.</p>
+	</div>
+	<div class="column_gallery">
+		<h2>PAINTINGS</h2>
+		<p>Using professional acrylic paint from school and from the dollar store, no matter the price, I wanted my style to still shine through. My message and personality should be able to be witnessed through the hopeful and bright pieces, which is what I wanted to accomplish with these two pieces.</p> 
+		<p><img class="photo" src="images/purple_landscape.jpg" alt="Landscape of a purple scenery" style="height: 350px">In the eleventh grade, I worked for the very first time with thick paint, and learned that it was very different to what I was used to: using water to decrease the shade of a colour. Instead, I had to add an additional amount of white/black/lighter shade of a colour in order to alter the shade. I also found out that too much white and black in a colour results in a muddy grey tone. I learned new brush techniques and depth with a new medium.</p>
+	</div>
+</div>
+
+<!-- Art Gallery content -->
+<div id="Art Gallery" class="tabcontent">
+  <div class="column_gallery">
+  	<img class="photo" src="images/art_far_away.jpg" alt="Art Gallery - flower stamp and drawing" style="height: 350px">
+  	<img class="photo" src="images/art_eye_far.jpg" alt="Art Gallery - View of eye" style="height: 350px">
+  	<img class="photo" src="images/eyes.jpg" alt="Art Gallery - Oil painting of eye" style="height: 350px">
+  	<img class="photo" src="images/art_gallery.jpg" alt="Art Gallery - from the outside" style="height: 350px">
+  </div>
+
+<div class="column_gallery">
+	<h2>ART GALLERY</h2>
+
+	<h3>MATERIALS USED:</h3>
+  	<ul>
+  		<li>ACRYLIC PAINT</li>
+  		<li>3D OBJECTS (flowers, marbles)</li>
+  		<li>STAMP</li>
+  		<li>PLASTECINE</li>
+  		<li>WATERCOLOUR</li>
+  		<li>PENCIL CRAYON</li>
+ 	</ul>
+
+  <h3>THEME:</h3>
+  <p>Nature (outside surrounded by rock, ocean pearls, flowers from land, and white clouds on the inside)</p> 
+
+  <h3>EYE PAINTING</h3>
+  <p>Using acrylic paint, I took on the challenge to create depth and realism through the mixture of colours. A hole is positioned directly in front of the observer, since eyes are what we see first and how we are able to silently still express emotion, even if unwilling.</p>
+
+  <h3>SCULPTURE</h3>
+  <p>I worked with what I had, plasticine, in order to create a human. Since we use the oxygen plants give us, and give nothing in return, I made the flowers surround the man, as if he owned them.</p>
+  <p>If observed with more detail, you can see that even the wall paper is full of flowers and the outside box is covered in flowers, in order to signify that the world is made of nature and plants, and while we are the majority of the animal population, we did not create nor own this planet.</p>
+
+  <h3>FLOWERS</h3>
+  <p>I used a stamp to create these flowers, by precisely carving.</p>
+
+  <h3>WOMAN</h3>
+  <p>Using pencil crayons, I displayed another human, not wearing clothes, but embracing nature.</p>
+
+  <h3>WATERCOLOUR</h3>
+  <p>Using watercolour, a bright yet faint medium, I painted a butterfly, standing on a flower, showing us that even the little things in nature are beautiful.</p>
+  <p>I also painted landscape of a small farm, surrounded by forestry. A take on our version of the world with remaining elements of nature.</p>
+
+  <h3>TISSUE PAPER</h3>
+  <p>When peering inside the box through the two designated holes, the blue adds a tint, to not let the observer that the sky is naturally blue, and so is the sea.</p>
+</div>
+</div>
+
+<!-- Contact content -->
+<div id="Contact" class="tabcontent">
+	<div class="column_gallery">
+		<h2>CONTACT</h2>
+		<h3>PROFESSIONAL</h3>
+		<p>pandastudi@gmail.com</p>
+		<h3>INSTAGRAM</h3>
+		<div id="contactButton">
+		<button><a  href="https://www.instagram.com/pandastudi/" target="_blank">PANDASTUDI</a></button>
+	</div>
+	</div>
+	<div class="column_gallery">
+		<form action="mailto:pandastudi@gmail.com" method="post" enctype="text/plain">
+			<div class="contactInfo">
+			<br>
+			<input type="text" onfocus="this.value=''" value="Name" name="name">
+			<br><br>
+			<input type="text" onfocus="this.value=''" value="E-mail" name="mail">
+			<br><br>
+			<input type="text" onfocus="this.value=''" value="Comment" name="comment">
+			<br><br>
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+		</div>
+		</form>
+	</div>
+</div>
+
+<script src="js/tabs.js"> </script>
+<script src="js/photos.js"> </script>
+</body>
+</html>

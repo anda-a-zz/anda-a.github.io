@@ -1,0 +1,63 @@
+html, body {
+	background: #ccb3ff; /* Beccapurple */ /* RRGGBB*/
+	margin: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	width: 90%;
+	margin: 0 auto;
+	padding: 2.5% 2.5% 0;
+	background: white;
+}
+
+.column_gallery {
+  width: 45%;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column_gallery h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.column_gallery ul {
+  margin-left: 0;
+  padding-left: 50px;
+  list-style: circle;
+  margin-bottom: 20px; 
+  position: relative;
+}
+
+.column_gallery ul li {
+  display:list-item;
+  line-height: 25px;
+  padding-left: 5px;
+  position: relative;
+}
+
+.column_gallery img {
+  width: 100%;
+  padding: 3px;
+  vertical-align: top;
+}
+
+.column_gallery p {
+	line-height: 30px;
+	padding-left: 30px;
+	margin-bottom: 20px; 
+}
+
+.column_gallery h2 {
+	margin-top: 5px;
+  	padding-left: 30px;
+	margin-bottom: 10px; 
+}
+
+.column_gallery h3 {
+	padding-left: 30px;
+	margin-bottom: 10px; 
+}
